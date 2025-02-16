@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3143cb3637.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="music-player">
+           <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- <div class="circle">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div> -->
+           </nav>
+           <img src="Nee_Singam_Dhan.png" class="songImg"> 
+           <h1>Nee Singam Dhan</h1>
+           <p>AR Rahman</p>
+
+           <audio id="song">
+            <source  src="Nee_Singam_Dhaan _Pathu Thala  A R Rahman.mp3" type="audio/mpeg">
+           </audio>
+
+           <input type="range" value="0" id="progress">
+
+           <div class="controls">
+                <div>
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="crtlIcon"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-forward"></i>
+                </div>
+           </div>
+
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
